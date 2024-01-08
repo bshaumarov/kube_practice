@@ -1,0 +1,32 @@
+Name:                   hr-app
+Namespace:              s-29
+CreationTimestamp:      Mon, 08 Jan 2024 17:38:19 +0200
+Labels:                 app=hr-app
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=hr-app
+Replicas:               3 desired | 3 updated | 3 total | 3 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=hr-app
+  Containers:
+   nginx:
+    Image:        nginx:1.18
+    Port:         <none>
+    Host Port:    <none>
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   hr-app-778f6fc699 (3/3 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  7m7s  deployment-controller  Scaled up replica set hr-app-778f6fc699 to 2
+  Normal  ScalingReplicaSet  56s   deployment-controller  Scaled up replica set hr-app-778f6fc699 to 3 from 2
