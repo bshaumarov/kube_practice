@@ -1,0 +1,53 @@
+Name:             nginx1-6d7876f5d4-9lwkc
+Namespace:        s-29
+Priority:         0
+Service Account:  default
+Node:             node1/135.181.204.192
+Start Time:       Mon, 08 Jan 2024 17:00:27 +0200
+Labels:           app=nginx1
+                  pod-template-hash=6d7876f5d4
+Annotations:      <none>
+Status:           Running
+IP:               10.233.69.182
+IPs:
+  IP:           10.233.69.182
+Controlled By:  ReplicaSet/nginx1-6d7876f5d4
+Containers:
+  nginx:
+    Container ID:   containerd://cfb507f2bd86e424588d1f01d788c26f0348449d5a14bf472c3a37e58158f7e3
+    Image:          nginx
+    Image ID:       docker.io/library/nginx@sha256:2bdc49f2f8ae8d8dc50ed00f2ee56d00385c6f8bc8a8b320d0a294d9e3b49026
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Mon, 08 Jan 2024 17:00:29 +0200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-bxptw (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-bxptw:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  2m47s  default-scheduler  Successfully assigned s-29/nginx1-6d7876f5d4-9lwkc to node1
+  Normal  Pulling    2m46s  kubelet            Pulling image "nginx"
+  Normal  Pulled     2m46s  kubelet            Successfully pulled image "nginx" in 884ms (884ms including waiting)
+  Normal  Created    2m46s  kubelet            Created container nginx
+  Normal  Started    2m45s  kubelet            Started container nginx

@@ -1,0 +1,3 @@
+kubectl create deploy nginx1 --image nginx --replicas 1 -n s-29 --dry-run=client -o yaml > nginx.yaml
+kubectl describe pods nginx1-6d7876f5d4-9lwkc -n s-29 > output_nginx1.txt
+kubectl describe pods nginx2-9498d8f59-25slh -n s-29 > output_nginx2.txt
