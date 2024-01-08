@@ -1,0 +1,2 @@
+kubectl expose deploy flask-app-test --port 80 --target-port 5000 --type NodePort -n s-29
+kubectl describe svc flask-app-test -n s-29
