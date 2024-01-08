@@ -1,0 +1,2 @@
+kubectl create deploy flask-app-test --image sayyod1981/flask-app-test:v1 --replicas 1 -n s-29
+kubectl port-forward deployment/flask-app-test 8080:5000 -n s-29
