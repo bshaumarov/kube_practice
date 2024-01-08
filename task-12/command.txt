@@ -1,0 +1,3 @@
+kubectl expose deploy flask-app-test --port 80 --target-port 5000 --type ClusterIP -n s-29
+kubectl -n s-29 exec -it nginx1-548b49765c-8tt9h -- curl flask-app-test
+kubectl -n s-29 exec -it nginx1-548b49765c-8tt9h -- curl flask-app-test/practice

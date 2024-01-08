@@ -1,0 +1,2 @@
+{"env":"staging","http_port":"80","string":"Pod"}
+{"author":"Bobur","message":"Well DONE!"}
