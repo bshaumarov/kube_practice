@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flask-app-test
+  name: flask-app-test
+  namespace: s-29
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: flask-app-test
+  type: NodePort
+status:
+  loadBalancer: {}

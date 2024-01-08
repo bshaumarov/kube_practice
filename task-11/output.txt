@@ -1,3 +1,4 @@
+{"env":"staging","http_port":"80","string":"Pod"}
 Name:                     flask-app-test
 Namespace:                s-29
 Labels:                   app=flask-app-test
@@ -6,11 +7,11 @@ Selector:                 app=flask-app-test
 Type:                     NodePort
 IP Family Policy:         SingleStack
 IP Families:              IPv4
-IP:                       10.233.40.103
-IPs:                      10.233.40.103
+IP:                       10.233.31.172
+IPs:                      10.233.31.172
 Port:                     <unset>  80/TCP
 TargetPort:               5000/TCP
-NodePort:                 <unset>  31172/TCP
+NodePort:                 <unset>  30454/TCP
 Endpoints:                10.233.68.178:5000
 Session Affinity:         None
 External Traffic Policy:  Cluster
