@@ -1,31 +1,33 @@
-Name:             nginx1-6d7876f5d4-9lwkc
+Name:             nginx1-548b49765c-8tt9h
 Namespace:        s-29
 Priority:         0
 Service Account:  default
-Node:             node1/135.181.204.192
-Start Time:       Mon, 08 Jan 2024 17:00:27 +0200
+Node:             node4/95.217.135.101
+Start Time:       Mon, 08 Jan 2024 17:22:32 +0200
 Labels:           app=nginx1
-                  pod-template-hash=6d7876f5d4
+                  author=Bobur
+                  pod-template-hash=548b49765c
+                  project=practice
 Annotations:      <none>
 Status:           Running
-IP:               10.233.69.182
+IP:               10.233.65.198
 IPs:
-  IP:           10.233.69.182
-Controlled By:  ReplicaSet/nginx1-6d7876f5d4
+  IP:           10.233.65.198
+Controlled By:  ReplicaSet/nginx1-548b49765c
 Containers:
   nginx:
-    Container ID:   containerd://cfb507f2bd86e424588d1f01d788c26f0348449d5a14bf472c3a37e58158f7e3
+    Container ID:   containerd://80b8d2b1fae6158390c91a0dcf3f1e347b7ba8ba8bd8a9816f7fe0315552bc6c
     Image:          nginx
     Image ID:       docker.io/library/nginx@sha256:2bdc49f2f8ae8d8dc50ed00f2ee56d00385c6f8bc8a8b320d0a294d9e3b49026
     Port:           <none>
     Host Port:      <none>
     State:          Running
-      Started:      Mon, 08 Jan 2024 17:00:29 +0200
+      Started:      Mon, 08 Jan 2024 17:22:33 +0200
     Ready:          True
     Restart Count:  0
     Environment:    <none>
     Mounts:
-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-bxptw (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-txchg (ro)
 Conditions:
   Type              Status
   Initialized       True 
@@ -33,7 +35,7 @@ Conditions:
   ContainersReady   True 
   PodScheduled      True 
 Volumes:
-  kube-api-access-bxptw:
+  kube-api-access-txchg:
     Type:                    Projected (a volume that contains injected data from multiple sources)
     TokenExpirationSeconds:  3607
     ConfigMapName:           kube-root-ca.crt
@@ -44,10 +46,10 @@ Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
 Events:
-  Type    Reason     Age    From               Message
-  ----    ------     ----   ----               -------
-  Normal  Scheduled  2m47s  default-scheduler  Successfully assigned s-29/nginx1-6d7876f5d4-9lwkc to node1
-  Normal  Pulling    2m46s  kubelet            Pulling image "nginx"
-  Normal  Pulled     2m46s  kubelet            Successfully pulled image "nginx" in 884ms (884ms including waiting)
-  Normal  Created    2m46s  kubelet            Created container nginx
-  Normal  Started    2m45s  kubelet            Started container nginx
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  3m4s  default-scheduler  Successfully assigned s-29/nginx1-548b49765c-8tt9h to node4
+  Normal  Pulling    3m4s  kubelet            Pulling image "nginx"
+  Normal  Pulled     3m3s  kubelet            Successfully pulled image "nginx" in 808ms (808ms including waiting)
+  Normal  Created    3m3s  kubelet            Created container nginx
+  Normal  Started    3m3s  kubelet            Started container nginx
