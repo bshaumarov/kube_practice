@@ -1,0 +1,7 @@
+NAME                DESIRED   CURRENT   READY   AGE
+hr-app-778f6fc699   2         2         2       94s
+nginx1-548b49765c   1         1         1       17m
+nginx1-6b557c6b86   0         0         0       17m
+nginx1-6d7876f5d4   0         0         0       39m
+nginx2-5d4bdfc578   1         1         1       15m
+nginx2-9498d8f59    0         0         0       37m
