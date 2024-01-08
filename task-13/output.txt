@@ -1,0 +1,1 @@
+{"domain":"xammal.uz","endpoint":"/check-ingress","full_path:":"xammal.uz/check-ingress"}
