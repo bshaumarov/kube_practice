@@ -1,13 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
+  name: nginx
   labels:
     app: nginx1
   name: nginx1
   namespace: s-29
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: nginx1
